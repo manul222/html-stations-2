@@ -12,8 +12,8 @@ test('#redと#blueが横並びになっている', async ({ page }) => {
   const redFloat = await page.$eval('#red', el => getComputedStyle(el).float)
   const blueFloat = await page.$eval('#blue', el => getComputedStyle(el).float)
 
-  expect(redFloat).toBe('left')
-  expect(blueFloat).toBe('left')
+    expect(redFloat).toBe('left')
+    expect(blueFloat).toBe('left')
 })
 
 test('横並びになっている#redと#blueの下に#greenが表示されている', async ({
